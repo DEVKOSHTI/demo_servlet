@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+<!--  servlet declaration-->
+<servlet>
+	<servlet-name>first</servlet-name>
+	<servlet-class>com.Servlet.FirstServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>second</servlet-name>
+	<servlet-class>com.Servlet.Second</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Servlet1</servlet-name>
+	<servlet-class>com.cl.Servlet1</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>servlet2</servlet-name>
+	<servlet-class>com.cl.Servlet2</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Form1</servlet-name>
+	<servlet-class>com.cl.Form1</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Form2</servlet-name>
+	<servlet-class>com.cl.Form2</servlet-class>
+</servlet>
+
+<!--  servlet mapping-->
+<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/web</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/second</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Servlet1</servlet-name>
+	<url-pattern>/Servlet1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>servlet2</servlet-name>
+	<url-pattern>/Servlet2</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Form1</servlet-name>
+	<url-pattern>/form1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Form2</servlet-name>
+	<url-pattern>/Form2</url-pattern>
+</servlet-mapping>
+
+
+<session-config>
+<session-timeout>
+30
+</session-timeout>
+</session-config>
+</web-app>
